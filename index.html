@@ -13,80 +13,104 @@
       padding: 0;
     }
 
-    body, html {
-      height: 100%;
-      font-family: 'Poppins', sans-serif;
-    }
-
     body {
-      background: url('background.jpg') no-repeat center center/cover;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      min-height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      color: #ffffff;
-      position: relative;
-      text-align: center;
-    }
-
-    /* Optional dark overlay for text readability */
-    body::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5); /* Adjust for brightness */
-      z-index: 0;
-    }
-
-    .container {
-      position: relative;
-      z-index: 1;
+      align-items: center;
       padding: 2rem;
-      max-width: 600px;
+    }
+
+    .wrapper {
+      display: flex;
+      max-width: 1000px;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .content {
+      max-width: 500px;
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       font-weight: 600;
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.3rem;
-      margin-bottom: 2rem;
+      font-size: 1.2rem;
       font-weight: 300;
+      margin-bottom: 2rem;
+      color: #444;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 28px;
-      background-color: #ffffff;
-      color: #000;
-      text-decoration: none;
+      padding: 12px 28px;
+      background-color: #000;
+      color: white;
       border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
 
     .button:hover {
-      background-color: #ddd;
+      background-color: #333;
+    }
+
+    .image-container {
+      flex-shrink: 0;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: auto;
+      object-fit: contain;
     }
 
     footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.85rem;
-      color: #ccc;
-      width: 100%;
       text-align: center;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #777;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container img {
+        width: 200px;
+        margin-top: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>VitaMind</h1>
-    <p>Chatbot AI percuma untuk menyokong kesihatan mental anda dalam Bahasa Melayu.</p>
-    <a class="button" href="https://vitamind-chatbot.onrender.com" target="_blank">Lancarkan Chatbot</a>
+  <div class="wrapper">
+    <div class="content">
+      <h1>VitaMind</h1>
+      <p>Chatbot AI percuma yang membantu menyokong kesihatan mental anda dalam Bahasa Melayu.</p>
+      <a href="https://vitamind-chatbot.onrender.com" target="_blank" class="button">Lancarkan Chatbot</a>
+    </div>
+    <div class="image-container">
+      <img src="background.jpg" alt="Illustration" />
+    </div>
   </div>
-  <footer>Developed by Nur Sarah Afiqah Binti Rosli @ UniKL MIIT 2025</footer>
+
+  <footer>
+    Dibangunkan oleh Nur Sarah Afiqah Binti Rosli @ UniKL MIIT 2025
+  </footer>
 </body>
 </html>
