@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VitaMind - Chatbot Kesihatan Mental</title>
   <meta name="description" content="VitaMind ialah Chatbot AI percuma untuk sokongan kesihatan mental dalam Bahasa Melayu.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -13,78 +13,80 @@
       padding: 0;
     }
 
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #000000;
+      background: url('background.jpg') no-repeat center center/cover;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      position: relative;
       text-align: center;
-      min-height: 100vh;
-      padding: 2rem;
+    }
+
+    /* Optional dark overlay for text readability */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust for brightness */
+      z-index: 0;
     }
 
     .container {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
       max-width: 600px;
-      width: 100%;
     }
 
     h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
+      font-size: 2.8rem;
+      font-weight: 600;
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.2rem;
-      font-weight: 300;
+      font-size: 1.3rem;
       margin-bottom: 2rem;
-      color: #444;
+      font-weight: 300;
     }
 
     .button {
       display: inline-block;
-      padding: 12px 28px;
-      border-radius: 8px;
-      background-color: #000;
-      color: #fff;
+      padding: 14px 28px;
+      background-color: #ffffff;
+      color: #000;
       text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
+      border-radius: 8px;
+      font-weight: bold;
       transition: background-color 0.3s ease;
     }
 
     .button:hover {
-      background-color: #333;
+      background-color: #ddd;
     }
 
     footer {
-      margin-top: 3rem;
+      position: absolute;
+      bottom: 20px;
       font-size: 0.85rem;
-      color: #666;
-    }
-
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 1rem;
-      }
+      color: #ccc;
+      width: 100%;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>VitaMind</h1>
-    <p>Chatbot AI percuma yang membantu menyokong kesihatan mental anda dalam Bahasa Melayu.</p>
-    <a href="https://vitamind-chatbot.onrender.com" target="_blank" class="button">Lancarkan Chatbot</a>
-
-    <footer>
-      Dibangunkan oleh Nur Sarah Afiqah Binti Rosli @ UniKL MIIT 2025
-    </footer>
+    <p>Chatbot AI percuma untuk menyokong kesihatan mental anda dalam Bahasa Melayu.</p>
+    <a class="button" href="https://vitamind-chatbot.onrender.com" target="_blank">Lancarkan Chatbot</a>
   </div>
+  <footer>Dibangunkan oleh Nur Sarah Afiqah Binti Rosli @ UniKL MIIT 2025</footer>
 </body>
 </html>
