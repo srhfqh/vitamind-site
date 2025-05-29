@@ -166,6 +166,31 @@
   .hero-content {
     max-width: 600px;
   }
+    
+    .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo {
+  width: 300px;
+  height: auto;
+}
+
+.hero-right {
+  flex: 1;
+  text-align: left;
+}
 
   .info-section {
     padding: 4rem 2rem;
@@ -200,17 +225,15 @@
 </header>
 
 
-  <div class="container">
+  <section class="hero-section">
+  <div class="hero-container">
     <!-- Left side: logo -->
-    <div class="left">
+    <div class="hero-left">
       <img src="vitamind-logo.png" alt="VitaMind Logo" class="logo fade-in"
            style="animation: fadeIn 1.5s ease-in 0s forwards;" />
     </div>
 
-   
-    <div class="right">
-      <section class="hero-section">
-        <div class="hero-content">
+    <div class="hero-right">
       <h1 class="fade-in" style="animation: fadeIn 1.5s ease-in 0.2s forwards;">Bila hati terasa berat, luahkan saja.</h1>
       <p class="fade-in" style="animation: fadeIn 1.5s ease-in 0.4s forwards;">
         VitaMind ada untuk anda — bila-bila masa, tanpa perlu daftar.<br>
@@ -222,6 +245,7 @@
         Mulakan Chatbot
       </a>
         </div>
+  </div>
       </section>
       
 <section class="info-section">
