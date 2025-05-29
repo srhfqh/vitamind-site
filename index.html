@@ -194,26 +194,48 @@
 
   .info-section {
     padding: 4rem 2rem;
-    background-color: #ffffff;
+    background-color: #f8fff9;
     color: #333;
     text-align: center;
   }
 
   .info-section h2 {
-    margin-top: 3rem;
+    color: #407a52;
+    margin-bottom: 1rem;
     font-size: 2rem;
   }
+    
+.info-section p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
-  .info-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-  }
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
 
-  .info-section li {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-  }
+.feature-card {
+  background-color: #e3f9ec;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  font-size: 1.05rem;
+  color: #2e6650;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  background-color: #d3f0e3;
+}
+
 </style>
 
 </head>
@@ -248,22 +270,25 @@
   </div>
       </section>
       
-<section class="info-section">
-  <h2>Tentang VitaMind</h2>
+<section id="tentang" class="info-section">
+  <h2>💚Tentang VitaMind</h2>
   <p>
-    VitaMind ialah chatbot AI mesra Bahasa Melayu yang direka untuk menemani dan menyokong kesejahteraan mental anda. Kami percaya bahawa setiap individu berhak untuk didengari dan difahami, bila-bila masa, di mana jua.
+    VitaMind ialah chatbot AI mesra Bahasa Melayu yang direka untuk menemani dan menyokong kesejahteraan mental anda. 
+    Kami percaya bahawa setiap individu berhak untuk didengari dan difahami, bila-bila masa, di mana jua.
   </p>
 </section>
 
+  <section id="ciri" class="info-section features"> 
   <h2>Ciri-Ciri Utama</h2>
-  <ul>
-    <li>🧠 Sokongan 24/7 secara anonim</li>
-    <li>💬 Komunikasi dalam Bahasa Melayu</li>
-    <li>📊 Cerapan harian tentang mood anda</li>
-    <li>🚫 Tiada pendaftaran diperlukan</li>
-  </ul>
+ <div class="features-grid">
+    <div class="feature-card">🧠 Sokongan 24/7 secara anonim</div>
+    <div class="feature-card">💬 Komunikasi dalam Bahasa Melayu</div>
+    <div class="feature-card">📊 Cerapan harian tentang mood anda</div>
+    <div class="feature-card">🚫 Tiada pendaftaran diperlukan</div>
+  </div>
+</section>
 
-
+<section id="hubungi" class="info-section">
   <h2>Hubungi Kami</h2>
   <p>
     Ada cadangan atau ingin tahu lebih lanjut? Hubungi pembangun di <strong>afqhnrsrh@gmail.com</strong> atau kunjungi kami di UniKL MIIT.
