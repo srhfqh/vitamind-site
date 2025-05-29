@@ -85,32 +85,62 @@
   to { opacity: 1; }
 }
 
+    .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.left, .right {
+  flex: 1;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
 
   </style>
 </head>
 <body>
-  <img src="vitamind-logo.png" alt="VitaMind Logo" class="logo fade-in"
-     style="animation: fadeIn 1.5s ease-in 0s forwards;" />
+ <div class="container">
+  <!-- Left side: logo -->
+  <div class="left">
+    <img src="vitamind-logo.png" alt="VitaMind Logo" class="logo fade-in"
+         style="animation: fadeIn 1.5s ease-in 0s forwards; max-width: 300px;" />
+  </div>
 
-<h1 class="fade-in"
-    style="animation: fadeIn 1.5s ease-in 0.2s forwards;">
-  VitaMind
-</h1>
+  <!-- Right side: text and button -->
+  <div class="right">
+    <h1 class="fade-in" style="animation: fadeIn 1.5s ease-in 0.2s forwards;">VitaMind</h1>
 
-<p class="fade-in"
-   style="animation: fadeIn 1.5s ease-in 0.4s forwards;">
-  Chatbot AI percuma yang membantu menyokong kesihatan mental anda dalam Bahasa Melayu.
-</p>
+    <p class="fade-in" style="animation: fadeIn 1.5s ease-in 0.4s forwards;">
+      Chatbot AI percuma yang membantu menyokong kesihatan mental anda dalam Bahasa Melayu.
+    </p>
 
-<a href="https://vitamind-chatbot.onrender.com" target="_blank"
-   class="button fade-in"
-   style="animation: fadeIn 1.5s ease-in 0.6s forwards;">
-  Mulakan Chatbot
-</a>
+    <a href="https://vitamind-chatbot.onrender.com" target="_blank"
+       class="button fade-in"
+       style="animation: fadeIn 1.5s ease-in 0.6s forwards;">
+      Mulakan Chatbot
+    </a>
+  </div>
+</div>
 
+<footer>© 2025 VitaMind – Dibangunkan oleh Nur Sarah Afiqah Binti Rosli @ UniKL MIIT</footer>
 
-
-  <footer>© 2025 VitaMind – Dibangunkan oleh Nur Sarah Afiqah Binti Rosli @ UniKL MIIT</footer>
 
   <!-- Floating bubbles -->
 <div class="bubble" style="left: 10%; animation-delay: 0s;"></div>
