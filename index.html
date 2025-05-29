@@ -79,6 +79,7 @@
     .fade-in {
   opacity: 0;
   animation: fadeIn 1.5s ease-in forwards;
+      animation-fill-mode: both;
 }
 @keyframes fadeIn {
   to { opacity: 1; }
@@ -88,18 +89,25 @@
   </style>
 </head>
 <body>
-  
- <img src="vitamind-logo.png" alt="VitaMind Logo" class="logo fade-in" style="animation-delay: 0s; animation-duration: 1.5s;" />
+  <img src="vitamind-logo.png" alt="VitaMind Logo" class="logo fade-in"
+     style="animation: fadeIn 1.5s ease-in 0s forwards;" />
 
-<h1 class="fade-in" style="animation-delay: 0.2s; animation-duration: 1.5s;">VitaMind</h1>
+<h1 class="fade-in"
+    style="animation: fadeIn 1.5s ease-in 0.2s forwards;">
+  VitaMind
+</h1>
 
-<p class="fade-in" style="animation-delay: 0.4s; animation-duration: 1.5s;">
+<p class="fade-in"
+   style="animation: fadeIn 1.5s ease-in 0.4s forwards;">
   Chatbot AI percuma yang membantu menyokong kesihatan mental anda dalam Bahasa Melayu.
 </p>
 
-<a href="https://vitamind-chatbot.onrender.com" target="_blank" class="button fade-in" style="animation-delay: 0.6s; animation-duration: 1.5s;">
+<a href="https://vitamind-chatbot.onrender.com" target="_blank"
+   class="button fade-in"
+   style="animation: fadeIn 1.5s ease-in 0.6s forwards;">
   Mulakan Chatbot
 </a>
+
 
 
   <footer>© 2025 VitaMind – Dibangunkan oleh Nur Sarah Afiqah Binti Rosli @ UniKL MIIT</footer>
