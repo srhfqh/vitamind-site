@@ -266,6 +266,93 @@
   transform: scale(1.02);
 }
 
+    @media (max-width: 768px) {
+  .container, .hero-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .main-header {
+    padding: 0 1rem;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header-logo {
+    height: 70px;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-right {
+    padding-top: 1rem;
+  }
+
+  .hero-logo,
+  .logo {
+    width: 70%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+  }
+
+  .feature-card {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .info-section {
+    padding: 2rem 1rem;
+  }
+
+  .info-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .tips-list li {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  footer {
+    padding: 1rem 1rem 2rem;
+    font-size: 0.85rem;
+  }
+}
+
+
 
 </style>
 
